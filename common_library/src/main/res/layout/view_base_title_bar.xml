@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#2e9e74"
+    android:gravity="center_vertical" >
+
+    <!--左边按钮-->
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="40dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_tab_bg"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside" />
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/my_icon_white"
+            android:layout_toRightOf="@id/left_image"
+            android:layout_marginLeft="2dp"
+            ></View>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <!--右边按钮-->
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/common_tab_bg" >
+        <ImageView
+            android:id="@+id/right_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</RelativeLayout>

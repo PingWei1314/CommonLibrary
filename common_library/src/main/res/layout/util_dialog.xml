@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/dialog_liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#35aaf5bb"
+        >
+        <com.pingwei.common_library.utils.LoadingView
+            android:id="@+id/swap_view"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            app:loading_renderer="SwapLoadingRenderer" />
+    </RelativeLayout>
+</LinearLayout>
