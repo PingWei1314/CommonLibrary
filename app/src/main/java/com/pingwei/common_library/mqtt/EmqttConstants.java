@@ -40,8 +40,8 @@ public class EmqttConstants {
         @Override
         public void connectComplete(boolean b, String s) {
            Toast.makeText(context,"连接成功", Toast.LENGTH_SHORT).show();
-           SysContent.MQTT_STATUS=true;
             subcribe(EmqTopic.getInstance().getControlTopic(),1);
+            SysContent.MQTT_STATUS=true;
            // LogUtil.writeFile(PreferenceManager.getInstance().getRunTime(),"[EmqttConstants]  connectComPlete: 连接成功");
 
         }

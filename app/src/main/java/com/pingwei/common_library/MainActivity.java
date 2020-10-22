@@ -6,10 +6,6 @@ import android.os.Bundle;
 
 import com.pingwei.common_library.mqtt.EmqttConstants;
 import com.pingwei.common_library.utils.SerialPortUtils;
-
-import org.eclipse.paho.android.service.MqttAndroidClient;
-import org.greenrobot.eventbus.EventBus;
-
 public class MainActivity extends AppCompatActivity {
     public static SerialPortUtils serialPortUtils=new SerialPortUtils();
 

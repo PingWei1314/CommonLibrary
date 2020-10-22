@@ -8,7 +8,7 @@ import com.pingwei.common_library.Urls;
 public class EmqTopic {
     private static final EmqTopic instance = new EmqTopic();
    //private String devCode= Config.getInstance().getDevCode();
-    private String devCode= "170820200101001";
+    private String devCode= "170820200700045";
     public static EmqTopic getInstance() {
         return instance;
     }

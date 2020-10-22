@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+
+    >
+
+
+    <!--图片轮播-->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--下方的渐变值-->
+    <RelativeLayout
+        android:id="@+id/gradientRelt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/banner_bottom_gradient_bg">
+
+        <!--下方的标题 、小圆点-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!--左下方的标题-->
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:visibility="gone"
+                android:textColor="@android:color/white" />
+
+            <!--banner下方的小圆点集合-->
+            <com.pingwei.common_library.banner.view.CirclePagerIndicator
+                android:id="@+id/indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                app:circle_indicator_centerHorizontal="true"
+                app:unselected_fill_circle_indicator_color="@android:color/white"
+                app:selected_indicator_color="#ff4D9DD0"
+                app:selected_indicator_radius="4dp"
+                app:unselected_indicator_radius="3dp" />
+        </LinearLayout>>
+
+
+    </RelativeLayout>
+</RelativeLayout>

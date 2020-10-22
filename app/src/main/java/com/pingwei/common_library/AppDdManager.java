@@ -15,13 +15,13 @@ public class AppDdManager {
     private static AppDdManager sInstance;
     private DbManager.DaoConfig daoCongfig = new DbManager.DaoConfig()
             //设置数据库的名字
-            .setDbName("loTlamp.db")
+            .setDbName("test.db")
             // 设置数据库支持事务
             .setAllowTransaction(true)
             // 设置数据库路径
             .setDbDir(new File(Environment.getExternalStorageDirectory()+"/DB"))
             // 设置数据库版本
-            .setDbVersion(12);
+            .setDbVersion(0);
 
     private DbManager mDb;
 
